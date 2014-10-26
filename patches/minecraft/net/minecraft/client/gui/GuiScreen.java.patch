@@ -83,4 +83,4 @@
 +        MinecraftForge.EVENT_BUS.post(new InitGuiEvent.Post(this, this.field_146292_n));
      }
  
-     public void func_73866_w_() {}
+     public void func_73866_w_()

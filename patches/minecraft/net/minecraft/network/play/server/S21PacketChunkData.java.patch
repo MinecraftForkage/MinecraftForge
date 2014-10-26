@@ -14,8 +14,8 @@
      private static final String __OBFID = "CL_00001304";
 +    private Semaphore deflateGate;
  
-     public S21PacketChunkData() {}
- 
+     public S21PacketChunkData()
+     {
 @@ -35,17 +37,22 @@
          this.field_149282_b = p_i45196_1_.field_76647_h;
          this.field_149279_g = p_i45196_2_;
@@ -45,7 +45,7 @@
          finally
          {
 @@ -75,13 +82,16 @@
-         p_148837_1_.readBytes(field_149286_i, 0, this.field_149285_h);
+         p_148837_1_.readBytes((byte[])field_149286_i, 0, this.field_149285_h);
          int i = 0;
          int j;
 +        int msb = 0; //BugFix: MC does not read the MSB array from the packet properly, causing issues for servers that use blocks > 256

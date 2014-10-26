@@ -26,7 +26,7 @@
      public Slot(IInventory p_i1824_1_, int p_i1824_2_, int p_i1824_3_, int p_i1824_4_)
      {
          this.field_75224_c = p_i1824_1_;
-@@ -97,7 +106,7 @@
+@@ -97,6 +106,6 @@
      @SideOnly(Side.CLIENT)
      public IIcon func_75212_b()
      {
@@ -34,7 +34,6 @@
 +        return backgroundIcon;
      }
  
-     @SideOnly(Side.CLIENT)
 @@ -105,4 +114,46 @@
      {
          return true;

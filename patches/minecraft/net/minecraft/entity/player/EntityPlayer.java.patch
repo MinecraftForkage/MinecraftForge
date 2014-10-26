@@ -436,8 +436,8 @@
              switch (j)
              {
 @@ -1447,18 +1583,25 @@
- 
-     public void func_146105_b(IChatComponent p_146105_1_) {}
+     {
+     }
  
 +    @Deprecated
      public ChunkCoordinates func_70997_bJ()

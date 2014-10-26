@@ -10,16 +10,16 @@
  {
 @@ -19,7 +20,6 @@
  
-     int func_72879_k(int p_72879_1_, int p_72879_2_, int p_72879_3_, int p_72879_4_);
+     int func_72805_g(int var1, int var2, int var3);
  
 -    @SideOnly(Side.CLIENT)
-     boolean func_147437_c(int p_147437_1_, int p_147437_2_, int p_147437_3_);
+     boolean func_147437_c(int var1, int var2, int var3);
  
      @SideOnly(Side.CLIENT)
 @@ -30,4 +30,16 @@
- 
-     @SideOnly(Side.CLIENT)
      boolean func_72806_N();
+ 
+     int func_72879_k(int var1, int var2, int var3, int var4);
 +
 +    /**
 +     * FORGE: isSideSolid, pulled up from {@link World}

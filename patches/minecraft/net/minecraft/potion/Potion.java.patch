@@ -27,4 +27,4 @@
 +     */
 +    @SideOnly(Side.CLIENT)
 +    public void renderInventoryEffect(int x, int y, PotionEffect effect, net.minecraft.client.Minecraft mc) { }
- }
+ 

@@ -59,7 +59,7 @@
          {
              IGrowable igrowable = (IGrowable)block;
 @@ -172,6 +199,16 @@
-                 p_150918_0_.func_72869_a("happyVillager", (double)((float)p_150918_1_ + field_77697_d.nextFloat()), (double)p_150918_2_ + (double)field_77697_d.nextFloat() * block.func_149669_A(), (double)((float)p_150918_3_ + field_77697_d.nextFloat()), d0, d1, d2);
+                 p_150918_0_.func_72869_a("happyVillager", (double)((float)p_150918_1_ + Item.field_77697_d.nextFloat()), (double)p_150918_2_ + (double)Item.field_77697_d.nextFloat() * block.func_149669_A(), (double)((float)p_150918_3_ + Item.field_77697_d.nextFloat()), d0, d1, d2);
              }
          }
 +        else

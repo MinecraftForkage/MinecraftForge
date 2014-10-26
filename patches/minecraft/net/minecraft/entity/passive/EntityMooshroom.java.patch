@@ -53,9 +53,7 @@
              return super.func_70085_c(p_70085_1_);
          }
      }
-@@ -71,4 +50,30 @@
-     {
-         return new EntityMooshroom(this.field_70170_p);
+@@ -71,2 +50,28 @@
      }
 +
 +    @Override

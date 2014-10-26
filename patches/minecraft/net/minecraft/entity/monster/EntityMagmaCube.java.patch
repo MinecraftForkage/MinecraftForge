@@ -7,4 +7,4 @@
 +        net.minecraftforge.common.ForgeHooks.onLivingJump(this);
      }
  
-     protected void func_70069_a(float p_70069_1_) {}
+     protected void func_70069_a(float p_70069_1_)

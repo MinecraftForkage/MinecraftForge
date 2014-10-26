@@ -38,7 +38,7 @@
      }
  
      @SideOnly(Side.CLIENT)
-@@ -241,4 +245,15 @@
+@@ -241,3 +245,14 @@
      {
          return 256;
      }
@@ -53,4 +53,3 @@
 +
 +        return func_147439_a(x, y, z).isSideSolid(this, x, y, z, side);
 +    }
- }

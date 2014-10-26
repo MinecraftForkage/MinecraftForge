@@ -12,6 +12,11 @@
  import org.lwjgl.opengl.GL11;
  
  @SideOnly(Side.CLIENT)
+@@ -65,2 +65,3 @@
+-        for (final int i = 0; i < 4; ++i)
++        for (int i = 0; i < 4; ++i)
+         {
++            final int ii = i;
 @@ -70,7 +72,10 @@
  
                  try
@@ -24,7 +29,11 @@
                  }
                  catch (Throwable throwable)
                  {
-@@ -95,7 +100,7 @@
+@@ -95,10 +100,10 @@
+-                            return i == 0 ? "MISC_TEXTURE" : (i == 1 ? "TERRAIN_TEXTURE" : (i == 2 ? "ITEM_TEXTURE" : (i == 3 ? "ENTITY_PARTICLE_TEXTURE" : "Unknown - " + i)));
++                            return ii == 0 ? "MISC_TEXTURE" : (ii == 1 ? "TERRAIN_TEXTURE" : (ii == 2 ? "ITEM_TEXTURE" : (ii == 3 ? "ENTITY_PARTICLE_TEXTURE" : "Unknown - " + ii)));
+                         }
+                     });
                      throw new ReportedException(crashreport);
                  }
  
@@ -33,6 +42,9 @@
                  {
                      this.field_78876_b[i].remove(j--);
                  }
+@@ -120,1 +120,1 @@
+-        for (final int i = 0; i < 3; ++i)
++        for (int i = 0; i < 3; ++i)
 @@ -144,6 +149,7 @@
                  for (int j = 0; j < this.field_78876_b[i].size(); ++j)
                  {
@@ -41,6 +53,15 @@
                      tessellator.func_78380_c(entityfx.func_70070_b(p_78874_2_));
  
                      try
+@@ -167,6 +167,7 @@
++                        final int ii = i;
+                         crashreportcategory.func_71500_a("Particle Type", new Callable()
+                         {
+                             private static final String __OBFID = "CL_00000919";
+                             public String call()
+                             {
+-                                return i == 0 ? "MISC_TEXTURE" : (i == 1 ? "TERRAIN_TEXTURE" : (i == 2 ? "ITEM_TEXTURE" : (i == 3 ? "ENTITY_PARTICLE_TEXTURE" : "Unknown - " + i)));
++                                return ii == 0 ? "MISC_TEXTURE" : (ii == 1 ? "TERRAIN_TEXTURE" : (ii == 2 ? "ITEM_TEXTURE" : (ii == 3 ? "ENTITY_PARTICLE_TEXTURE" : "Unknown - " + ii)));
 @@ -200,6 +206,7 @@
              for (int i = 0; i < list.size(); ++i)
              {

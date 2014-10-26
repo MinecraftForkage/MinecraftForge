@@ -218,6 +218,6 @@
 +        return this instanceof EntityPig;
 +    }
 +
-     public void func_152111_bt() {}
- 
-     public void func_152112_bu() {}
+     public void func_152111_bt()
+     {
+     }

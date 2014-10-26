@@ -9,10 +9,9 @@
          }
          else
          {
-@@ -124,6 +124,45 @@
- 
-     public void func_151367_b(EntityLivingBase p_151367_1_, Entity p_151367_2_, int p_151367_3_) {}
- 
+@@ -124,3 +124,42 @@
+         field_92090_c = (Enchantment[])var0.toArray(new Enchantment[0]);
+     }
 +    /**
 +     * This applies specifically to applying at the enchanting table. The other method {@link #canApply(ItemStack)}
 +     * applies for <i>all possible</i> enchantments.
@@ -52,6 +51,4 @@
 +        return true;
 +    }
 +
-     static
-     {
-         ArrayList var0 = new ArrayList();
+ }

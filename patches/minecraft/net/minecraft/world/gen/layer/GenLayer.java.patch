@@ -16,15 +16,15 @@
          }
 +        b0 = getModdedBiomeSize(p_75901_2_, b0);
  
-         GenLayer genlayer = GenLayerZoom.func_75915_a(1000L, genlayer2, 0);
+         GenLayer genlayer = GenLayerZoom.func_75915_a(1000L, genlayer3, 0);
          GenLayerRiverInit genlayerriverinit = new GenLayerRiverInit(100L, genlayer);
--        Object object = new GenLayerBiome(200L, genlayer2, p_75901_2_);
-+        Object object = p_75901_2_.getBiomeLayer(p_75901_0_, genlayer2);
+-        Object object = new GenLayerBiome(200L, genlayer3, p_75901_2_);
++        Object object = p_75901_2_.getBiomeLayer(p_75901_0_, genlayer3);
  
 -        if (!flag)
 -        {
--            GenLayer genlayer3 = GenLayerZoom.func_75915_a(1000L, (GenLayer)object, 2);
--            object = new GenLayerBiomeEdge(1000L, genlayer3);
+-            GenLayer genlayer2 = GenLayerZoom.func_75915_a(1000L, (GenLayer)object, 2);
+-            object = new GenLayerBiomeEdge(1000L, genlayer2);
 -        }
 -
          GenLayer genlayer1 = GenLayerZoom.func_75915_a(1000L, genlayerriverinit, 2);
@@ -38,7 +38,7 @@
 +        return BiomeManager.oceanBiomes.contains(BiomeGenBase.func_150568_d(p_151618_0_));
      }
  
-     protected int func_151619_a(int ... p_151619_1_)
+     protected int func_151619_a(int... p_151619_1_)
 @@ -204,4 +202,27 @@
      {
          return p_151617_2_ == p_151617_3_ && p_151617_3_ == p_151617_4_ ? p_151617_2_ : (p_151617_1_ == p_151617_2_ && p_151617_1_ == p_151617_3_ ? p_151617_1_ : (p_151617_1_ == p_151617_2_ && p_151617_1_ == p_151617_4_ ? p_151617_1_ : (p_151617_1_ == p_151617_3_ && p_151617_1_ == p_151617_4_ ? p_151617_1_ : (p_151617_1_ == p_151617_2_ && p_151617_3_ != p_151617_4_ ? p_151617_1_ : (p_151617_1_ == p_151617_3_ && p_151617_2_ != p_151617_4_ ? p_151617_1_ : (p_151617_1_ == p_151617_4_ && p_151617_2_ != p_151617_3_ ? p_151617_1_ : (p_151617_2_ == p_151617_3_ && p_151617_1_ != p_151617_4_ ? p_151617_2_ : (p_151617_2_ == p_151617_4_ && p_151617_1_ != p_151617_3_ ? p_151617_2_ : (p_151617_3_ == p_151617_4_ && p_151617_1_ != p_151617_2_ ? p_151617_3_ : this.func_151619_a(new int[] {p_151617_1_, p_151617_2_, p_151617_3_, p_151617_4_}))))))))));

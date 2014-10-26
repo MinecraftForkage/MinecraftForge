@@ -19,9 +19,9 @@
  public class EntityEnderman extends EntityMob
  {
      private static final UUID field_110192_bp = UUID.fromString("020E0DFB-87AE-4653-9556-831010E291A0");
-     private static final AttributeModifier field_110193_bq = (new AttributeModifier(field_110192_bp, "Attacking speed boost", 6.199999809265137D, 0)).func_111168_a(false);
+     private static final AttributeModifier field_110193_bq;
 +    @Deprecated //DO NOT TOUCH THIS EVER
-     private static boolean[] field_70827_d = new boolean[256];
+     private static boolean[] field_70827_d;
      private int field_70828_e;
      private int field_70826_g;
 @@ -154,7 +159,7 @@

@@ -258,7 +258,7 @@
 +        GL11.glEnable(GL11.GL_BLEND); //Forge: Make sure blend is enabled else tabs show a white border.
          this.func_73729_b(l, i1, j, k, 28, b0);
          this.field_73735_i = 100.0F;
-         field_146296_j.field_77023_b = 100.0F;
+         GuiScreen.field_146296_j.field_77023_b = 100.0F;
 @@ -854,6 +944,15 @@
          {
              this.field_146297_k.func_147108_a(new GuiStats(this, this.field_146297_k.field_71439_g.func_146107_m()));

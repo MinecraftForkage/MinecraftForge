@@ -20,8 +20,8 @@
  {
      private static final Logger field_147145_h = LogManager.getLogger();
 @@ -92,7 +97,7 @@
-     @SideOnly(Side.SERVER)
-     private String field_71320_r;
+     private final ServerStatusResponse field_147147_p = new ServerStatusResponse();
+     private final Random field_147146_q = new Random();
      private int field_71319_s = -1;
 -    public WorldServer[] field_71305_c;
 +    public WorldServer[] field_71305_c = new WorldServer[0];
@@ -184,7 +184,7 @@
              }
          }
 @@ -1451,7 +1450,6 @@
-         this.field_147141_M = p_155759_1_;
+         return "";
      }
  
 -    @SideOnly(Side.SERVER)

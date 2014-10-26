@@ -11,7 +11,7 @@
  public class WorldClient extends World
  {
 @@ -51,8 +54,11 @@
-         super(new SaveHandlerMP(), "MpServer", WorldProvider.func_76570_a(p_i45063_3_), p_i45063_2_, p_i45063_5_);
+         super(new SaveHandlerMP(), "MpServer", (WorldProvider)WorldProvider.func_76570_a(p_i45063_3_), (WorldSettings)p_i45063_2_, p_i45063_5_);
          this.field_73035_a = p_i45063_1_;
          this.field_73013_u = p_i45063_4_;
 -        this.func_72950_A(8, 64, 8);

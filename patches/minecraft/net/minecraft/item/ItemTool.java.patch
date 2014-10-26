@@ -34,8 +34,7 @@
      }
  
      public float func_150893_a(ItemStack p_150893_1_, Block p_150893_2_)
-@@ -83,4 +97,37 @@
-         multimap.put(SharedMonsterAttributes.field_111264_e.func_111108_a(), new AttributeModifier(field_111210_e, "Tool modifier", (double)this.field_77865_bY, 0));
+@@ -83,3 +97,36 @@
          return multimap;
      }
 +

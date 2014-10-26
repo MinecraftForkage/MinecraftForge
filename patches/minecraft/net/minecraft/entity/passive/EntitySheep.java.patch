@@ -50,9 +50,7 @@
          return super.func_70085_c(p_70085_1_);
      }
  
-@@ -290,4 +271,24 @@
-     {
-         return 15 - ((EntitySheep)p_90013_1_).func_70896_n();
+@@ -290,2 +271,22 @@
      }
 +
 +    @Override

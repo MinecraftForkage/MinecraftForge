@@ -15,8 +15,8 @@
 +    private int maxLen = 0;
 +    private Semaphore deflateGate;
  
-     public S26PacketMapChunkBulk() {}
- 
+     public S26PacketMapChunkBulk()
+     {
 @@ -43,15 +46,6 @@
          {
              Chunk chunk = (Chunk)p_i45197_1_.get(k);

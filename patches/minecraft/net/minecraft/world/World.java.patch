@@ -303,7 +303,7 @@
          float f1 = this.func_72826_c(p_72967_1_);
          float f2 = 1.0F - (MathHelper.func_76134_b(f1 * (float)Math.PI * 2.0F) * 2.0F + 0.5F);
  
-@@ -1414,11 +1533,9 @@
+@@ -1414,6 +1533,5 @@
          f2 = 1.0F - f2;
          f2 = (float)((double)f2 * (1.0D - (double)(this.func_72867_j(p_72967_1_) * 5.0F) / 16.0D));
          f2 = (float)((double)f2 * (1.0D - (double)(this.func_72819_i(p_72967_1_) * 5.0F) / 16.0D));
@@ -311,11 +311,11 @@
 -        return (int)(f2 * 11.0F);
 +        return f2;
      }
+@@ -1313,4 +1313,3 @@
  
 -    @SideOnly(Side.CLIENT)
      public void func_72848_b(IWorldAccess p_72848_1_)
      {
-         this.field_73021_x.remove(p_72848_1_);
 @@ -1427,6 +1544,12 @@
      @SideOnly(Side.CLIENT)
      public float func_72971_b(float p_72971_1_)

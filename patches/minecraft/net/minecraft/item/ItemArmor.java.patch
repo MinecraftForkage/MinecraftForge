@@ -9,8 +9,7 @@
              p_77659_1_.field_77994_a = 0;
          }
  
-@@ -259,6 +259,9 @@
- 
+@@ -259,5 +259,8 @@
          private static final String __OBFID = "CL_00001768";
  
 +        //Added by forge for custom Armor materials.

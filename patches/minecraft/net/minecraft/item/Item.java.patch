@@ -697,7 +697,7 @@
      {
          WOOD(0, 59, 2.0F, 0.0F, 15),
 @@ -743,6 +1346,9 @@
- 
+          private final int field_78008_j;
          private static final String __OBFID = "CL_00000042";
  
 +        //Added by forge for custom Tool materials.

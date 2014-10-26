@@ -35,8 +35,8 @@
              private static final String __OBFID = "CL_00000527";
 +            public BiomeGenBase biome;
  
-             public Start() {}
- 
+             public Start()
+             {
 @@ -1435,6 +1440,7 @@
                  this.field_74928_c = p_i2104_7_;
                  BiomeGenBase biomegenbase = p_i2104_1_.func_76935_a(p_i2104_4_, p_i2104_5_);
@@ -51,8 +51,8 @@
              private static final String __OBFID = "CL_00000531";
 +            private StructureVillagePieces.Start startPiece;
  
-             public Village() {}
- 
+             public Village()
+             {
 @@ -1505,6 +1512,7 @@
                  if (p_i2107_1_ != null)
                  {

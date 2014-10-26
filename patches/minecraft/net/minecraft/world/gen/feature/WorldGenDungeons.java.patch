@@ -32,4 +32,4 @@
 -        return i == 0 ? "Skeleton" : (i == 1 ? "Zombie" : (i == 2 ? "Zombie" : (i == 3 ? "Spider" : "")));
 +        return DungeonHooks.getRandomDungeonMob(p_76543_1_);
      }
- }
+ 

@@ -4,8 +4,8 @@
      private TesselatorVertexState field_147894_y;
      public World field_78924_a;
      private int field_78942_y = -1;
--    private static Tessellator field_78941_z = Tessellator.field_78398_a;
-+    //private static Tessellator tessellator = Tessellator.instance;
+-    private static Tessellator field_78941_z;
++    //private static Tessellator tessellator;
      public static int field_78922_b;
      public int field_78923_c;
      public int field_78920_d;
@@ -83,3 +83,9 @@
              this.func_147891_a(1, p_147889_1_);
          }
      }
+@@ -319,5 +319,1 @@
+-    static
+-    {
+-        field_78941_z = Tessellator.field_78398_a;
+-    }
+ }
