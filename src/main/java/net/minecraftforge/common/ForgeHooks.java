@@ -178,6 +178,7 @@ public class ForgeHooks
         Blocks.iron_block.setHarvestLevel("pickaxe", 1);
         Blocks.lapis_ore.setHarvestLevel("pickaxe", 1);
         Blocks.lapis_block.setHarvestLevel("pickaxe", 1);
+        Blocks.quartz_ore.setHarvestLevel("pickaxe", 0);
     }
 
     public static int getTotalArmorValue(EntityPlayer player)
@@ -224,7 +225,7 @@ public class ForgeHooks
                 return false;
             }
 
-            result = block.getPickBlock(target, world, x, y, z);
+            result = block.getPickBlock(target, world, x, y, z, player);
         }
         else
         {
@@ -475,10 +476,10 @@ public class ForgeHooks
             {
                 itemstack.setTagCompound(nbt);
             }
-            if (blockSnapshots.size() > 1) 
+            if (blockSnapshots.size() > 1)
             {
                 placeEvent = ForgeEventFactory.onPlayerMultiBlockPlace(player, blockSnapshots, net.minecraftforge.common.util.ForgeDirection.getOrientation(side));
-            } 
+            }
             else if (blockSnapshots.size() == 1)
             {
                 placeEvent = ForgeEventFactory.onPlayerBlockPlace(player, blockSnapshots.get(0), net.minecraftforge.common.util.ForgeDirection.getOrientation(side));
@@ -540,7 +541,7 @@ public class ForgeHooks
         container.stackSizeToBeUsedInRepair = e.materialCost;
         return false;
     }
-    
+
     public static float onAnvilRepair(EntityPlayer player, ItemStack output, ItemStack left, ItemStack right)
     {
         AnvilRepairEvent e = new AnvilRepairEvent(player, left, right, output);
