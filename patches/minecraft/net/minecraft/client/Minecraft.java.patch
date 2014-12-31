@@ -73,9 +73,9 @@
  
                      continue;
                  }
-+                }
  
                  this.func_71377_b(this.field_71433_S);
++                }
              }
              catch (MinecraftError minecrafterror)
 @@ -1341,7 +1346,7 @@
